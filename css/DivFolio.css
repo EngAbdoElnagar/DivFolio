@@ -1,0 +1,292 @@
+a {
+  color: #fff !important;
+}
+* {
+  box-sizing: border-box;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+li {
+  list-style: none;
+}
+.text-title p {
+  position: relative;
+}
+.text-title p::after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  background-color: #0078ff;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+nav {
+  z-index: 9999;
+}
+nav:hover {
+  background-color: #040404;
+}
+.dropdown-toggle:hover {
+  background-color: #040404;
+}
+.navbar-toggler-icon {
+  color: #fff !important;
+}
+
+#home {
+  background-image: url(../imeges/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+#home h4::after {
+  content: "";
+  color: #fff;
+  animation-name: tyeping;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-duration: alternate;
+}
+#home .text-home {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  display: grid;
+  place-content: center;
+}
+h5::after {
+  content: "";
+  color: #fff;
+  width: 0;
+  font-size: 30px;
+  border-right: 3px solid;
+  animation: bordering 1s infinite;
+  -webkit-animation: bordering 1s infinite;
+  animation: tyeping 4s infinite alternate;
+  animation-duration: 4s;
+  animation-timing-function: steps(300, end);
+}
+@keyframes bordering {
+  0% {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: white;
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}
+@keyframes tyeping {
+  0% {
+    width: 100%;
+    content: "photography";
+  }
+  33% {
+    width: 100%;
+    content: "Designer";
+  }
+  66% {
+    width: 100%;
+
+    content: "Freelancer";
+  }
+  100% {
+    width: 100%;
+    content: "Developer";
+  }
+}
+
+#about .container {
+  background-color: #fff;
+}
+#about .container .about-me h2 {
+  position: relative;
+}
+#about .container .about-me h2::before {
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: #0078ff;
+  position: absolute;
+  bottom: 0;
+}
+.progress {
+  height: 10px;
+  margin: 0;
+  padding: 0;
+}
+#services .container .text-title p {
+  position: relative;
+}
+#services .container .text-title p::after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  background-color: #0078ff;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+#services .container .row .col-md-4 .cardd {
+  background-color: #fff;
+}
+#services .container .row .col-md-4:hover i {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+#services .container .row .col-md-4:hover i {
+  color: #fff;
+  background-color: #0078ff;
+}
+#services .container .row .col-md-4 i {
+  border: 10px solid #0078ff !important;
+}
+#services .container .row .col-md-4:hover i {
+  border: 10px solid #cde1f8 !important;
+}
+#informiation {
+  background-image: url(../imeges/counters-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+#informiation i {
+  border: 10px solid #cde1f8 !important;
+}
+#work {
+  background-color: #f5f5f5;
+}
+#work .card {
+  overflow: hidden;
+  transition: all 1s;
+}
+#work .card:hover {
+  overflow: hidden;
+  transition: all 1s;
+}
+#work .card img {
+  overflow: hidden;
+  transition: all 1s;
+}
+#work .card:hover img {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+
+#slide {
+  background-image: url(../imeges/overlay-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  margin: 20 5pxpx;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#Blog .card-footer .img {
+  height: 40px;
+}
+#Blog .card-body h5:hover {
+  color: #0078ff;
+}
+#Blog .card-footer .img img {
+  width: 20%;
+  height: 100%;
+}
+#Blog .card-footer .icon {
+  font-size: 14px;
+}
+#Blog .card-body {
+  position: relative;
+}
+#Blog .card-body::after {
+  content: "WEB DESIGN";
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  font-size: 12px;
+  text-align: center;
+  background-color: #0078ff;
+  padding: 7px 0;
+  color: #fff;
+  border-radius: 5px;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+#contact {
+  background-image: url(../imeges/overlay-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#contact h2::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 4px;
+  background-color: #0078ff;
+  bottom: -10px;
+  left: 0;
+}
+#contact button {
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+#contact button:hover {
+  background-color: #3393ff;
+  border: solid 5px #cde1f8;
+}
+#contact .layer {
+  position: relative;
+}
+#contact .container .social-icon i:hover {
+  background-color: #0062d3;
+  color: #fff;
+}
+footer {
+  background-color: #0062d3;
+}
+footer a {
+  text-decoration: none;
+}
